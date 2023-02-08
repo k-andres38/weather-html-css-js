@@ -49,11 +49,29 @@ form{
 
 }
 
-.fa-solid{
+.fa-solid,button{
     cursor: pointer;
     width: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 0px 2px 2px 0px;
+   
    
 }
+
+.fa-solid:active,button:active{
+    background-color: #334164;
+    color:white;
+    cursor: pointer;
+    width: 3rem;
+    border: none;
+    outline: none;
+    
+   
+}
+
+
+
 input{
     background-color: transparent;
     width: 100%;
@@ -63,7 +81,8 @@ input{
     padding:10px;
     border: none;
     outline: none;
-    border-radius: 2px;
+    border-radius: 2px 0px 0px 2px;
+    
     
     
 }
@@ -109,7 +128,7 @@ table td{
 }
 
 .map{
-    width: 400px;
+    width: 387px;
     display: flex;
     justify-content: center;
     align-items: center;
