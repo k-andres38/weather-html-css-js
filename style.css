@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+
+}
+
+body{
+    background-color: #334164;
+}
+
+.icon_grade{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.condition{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hourly{
+    margin-top: 5vh;
+    margin-bottom: 2rem;
+    font-size: xx-large;
+}
+
+
+form{
+    background-color:rgba(215, 222, 236, 0.1);
+    width:24em;
+    margin:2vh auto;
+    
+
+}
+
+.search{
+   
+    display: flex;
+
+}
+
+.fa-solid{
+    cursor: pointer;
+    width: 3rem;
+   
+}
+input{
+    background-color: transparent;
+    width: 100%;
+    font-size: large;
+    font-weight: 100;
+    color: white;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    
+    
+}
+
+
+
+.weather{
+    padding: 10px;
+    border-radius: 2px;
+    margin: 2vh auto;
+    width: 24em;
+
+    
+    
+    background-color:rgba(221, 225, 233, 0.1);
+   
+    
+    color:white;
+
+}
+
+table{
+    text-align: center;
+    
+    width: 100%;
+}
+
+th{
+    color: #57ABD8;
+}
+
+
+
+table td{
+    height: 4rem;
+}
+
+.map{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+}

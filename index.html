@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather</title>
+</head>
+<body>
+
+<main class="central">
+
+
+    <form class="formulario"  method="POST">
+
+       <div class="search">
+        <input type="text" name="input" data-city="city">
+        <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+       </div>
+
+
+    </form>
+   
+    <section class="weather">
+        <div class='icon_grade'>
+            <p class="hourly">Hourly</p>
+            <div class="condition">
+                <img class="icon" src="" alt=""><span class="clim"> </span>
+                <span class="grade"></span>
+            </div>
+        </div>
+        
+        <div class="body">
+        
+            <table>
+                <thead>
+                    <th>Ciudad</th>
+                    <th>TIME</th>
+                    <th>COND</th>
+                    <th>PRECIP</th>
+                    <th>TEMP</th>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td class="city"></td>
+                        <td class="time"></td>
+                        <td><img  class="cond" src="" alt=""></td>
+                        
+                        <td class="precip"></td>
+                       
+                        <td class="temp"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </section>
+</main>
+<div class="map">
+    <iframe class="mapa" src="" width="387" height="300" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
