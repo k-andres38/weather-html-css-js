@@ -186,6 +186,8 @@ table td{
 
     .card{
      width: 385px;
+     display: grid;
+     place-items: center;
     }
 
     .history{
