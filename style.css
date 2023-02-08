@@ -9,6 +9,10 @@
 
 body{
     background-color: #334164;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 main{
     display: flex;
@@ -134,4 +138,59 @@ table td{
     align-items: center;
     margin: auto;
   
+}
+
+/* History del clima*/
+
+.history{
+    margin-top: 12vh;
+
+    height: 33.5rem;
+   
+    overflow-y: scroll;
+
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.card{
+    
+    background-color:rgba(221, 225, 233, 0.1);
+    border-radius: 2px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+    
+    margin-bottom: 10px;
+}
+
+
+
+.cardIconUp{
+    display: flex; 
+    
+}
+
+.grade{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:600px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+     width: 385px;
+    }
+
+    .history{
+       margin-top: 2vh;
+       height: 12rem;
+        
+    }
 }
