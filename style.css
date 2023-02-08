@@ -142,10 +142,20 @@ table td{
 
 /* History del clima*/
 
-.history{
+article{
     margin-top: 12vh;
+    text-align: center;
+    color: white;
 
-    height: 33.5rem;
+}
+article h3{
+    padding: 10px;
+}
+
+.history{
+    
+
+    height: 31.5rem;
    
     overflow-y: scroll;
 
@@ -190,7 +200,7 @@ table td{
      place-items: center;
     }
 
-    .history{
+    article{
        margin-top: 2vh;
        height: 13.5rem;
         
