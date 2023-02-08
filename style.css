@@ -10,6 +10,12 @@
 body{
     background-color: #334164;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .icon_grade{
     display: flex;
@@ -31,7 +37,8 @@ body{
 form{
     background-color:rgba(215, 222, 236, 0.1);
     width:24em;
-    margin:2vh auto;
+   
+    margin:3vh auto;
     
 
 }
@@ -67,7 +74,8 @@ input{
     padding: 10px;
     border-radius: 2px;
     margin: 2vh auto;
-    width: 24em;
+    width:24em;
+ 
 
     
     
@@ -84,14 +92,20 @@ table{
     width: 100%;
 }
 
+
+
 th{
     color: #57ABD8;
+    
 }
 
 
 
 table td{
     height: 4rem;
+    
+    
+    
 }
 
 .map{
