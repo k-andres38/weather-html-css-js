@@ -37,7 +37,7 @@ formulario.addEventListener('submit', (e)=>{
 
 
 const weather=async(search='Bucaramanga')=>{
-    const url=`http://api.weatherapi.com/v1/current.json?key=96da45d08fc94a1f83905422230802&q=${search}&aqi=no`;
+    const url=`https://api.weatherapi.com/v1/current.json?key=96da45d08fc94a1f83905422230802&q=${search}&aqi=no`;
     const response=await fetch(url);
     const data=await response.json();
     
@@ -48,11 +48,11 @@ const weather=async(search='Bucaramanga')=>{
 function frontUI(info){
     icon.setAttribute('src',info.current.condition.icon)
     grade.textContent=info.current.temp_c+'°'
-    clim.textContent=info.current.condition.text+''
+    clim.textContent=info.current.condition.text
 
     time.textContent=(info.location.localtime).slice(-5)
-    condition.setAttribute('src',info.current.condition.icon)
-
+    //condition.setAttribute('src',info.current.condition.icon)
+    condition.textContent=info.current.condition.text
     precip.textContent=info.current.precip_in;
 
     city.textContent=info.location.name
